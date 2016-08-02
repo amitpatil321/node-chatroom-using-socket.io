@@ -11,15 +11,23 @@ app.use(express.static(__dirname + "/public"));
 io.on("connection",function(socket){
     // New message received
     socket.on("newMessage",function(msg){
-        console.log("New message received :"+msg);
+        //console.log("New message received :"+msg);
         // Broadcast message to all users
-        io.emit("newMessage",{"msg" : msg, "time" : Date.now()})
+        io.emit("newMessage",{"msg" : msg.msg, "user":msg.user, "time" : Date.now()})
     });
 
+    // User joined chatroom
     socket.on("newUser",function(data){
-        console.log("New user joined: "+data);
+        //console.log("New user joined: "+data);
         // Broadcast message to all users
         io.emit("newUser",data)
+    });    
+
+    // User left chatroom
+    socket.on("userLogout",function(user){
+        //console.log(user);
+        // Broadcast message to all users
+        io.emit("userLogout",user)
     });
 
 });
