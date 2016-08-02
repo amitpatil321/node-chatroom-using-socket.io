@@ -1,0 +1,21 @@
+{
+  "name": "socketio",
+  "version": "1.0.0",
+  "description": "Simple socket io demo",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "keywords": [
+    "socketio",
+    "socket.io",
+    "socket",
+    "programming"
+  ],
+  "author": "Amit Patil",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "socket.io": "^1.4.8"
+  }
+}
