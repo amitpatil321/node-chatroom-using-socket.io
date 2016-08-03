@@ -12,46 +12,67 @@
     <title>Public Chatroom</title>
     <body>
 
-      <div class="ui segments" style="margin:10% 30%">
-        <div class="ui green segment teal inverted">
-          <div class="ui grid">
-            <div class="two column row">
-              <div class="left floated column"><h4 class="wintitle">Chatroom</h4></div>
-              <div class="right floated column right aligned">
-                <button class="ui button mini orange logout" onClick="logout();">
-                  <i class="icon sign out"></i>Logout
-                </button>                
+      <div class="ui grid">
+
+        <div class="ten wide column">
+            <div class="ui segments" style="margin-top: 10%;margin-left: 5%;">
+              <div class="ui green segment teal inverted">
+                <div class="ui grid">
+                  <div class="two column row">
+                    <div class="left floated column"><h4 class="wintitle">Chatroom</h4></div>
+                    <div class="right floated column right aligned">
+                      <button class="ui button mini orange logout" onClick="logout();">
+                        <i class="icon sign out"></i>Logout
+                      </button>                
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="ui segment room">
-          <div class="ui dimmer">
-            <div class="ui indeterminate text loader">Please enter your nick name to get started</div>
-          </div>        
-          <ul id="messages"></ul>
-        </div>
-        <div class="ui bottom attached message info">
-          <form action="">
+              <div class="ui segment room">
+                <div class="ui dimmer">
+                  <div class="ui indeterminate text loader">Please enter your nick name to get started</div>
+                </div>        
+                <ul id="messages"></ul>
+              </div>
+              <div class="ui bottom attached message info">
+                <form action="">
 
-            <div class="ui fluid action input txtmessage">
-              <input placeholder="Type message here..." type="text" id="txtmessage" autocomplete="off">
-              <button type="submit" class="ui icon button positive">
-                <i class="send icon"></i>
-              </button>
-            </div>
+                  <div class="ui fluid action input txtmessage">
+                    <input placeholder="Type message here..." type="text" id="txtmessage" autocomplete="off">
+                    <button type="submit" class="ui icon button positive">
+                      <i class="send icon"></i>
+                    </button>
+                  </div>
 
-            <div class="ui fluid action input nickname" style="display:none;">
-              <input placeholder="Ente your nick name" type="text" id="nickname" autocomplete="off">
-              <button type="submit" class="ui labeled positive icon button login">
-                <i class="user icon"></i>
-                Enter
-              </button>
-            </div>
+                  <div class="ui fluid action input nickname" style="display:none;">
+                    <input placeholder="Ente your nick name" type="text" id="nickname" autocomplete="off">
+                    <button type="submit" class="ui labeled positive icon button login">
+                      <i class="user icon"></i>
+                      Enter
+                    </button>
+                  </div>
 
-          </form>
+                </form>
+              </div>
+            </div>    
         </div>
-      </div>
+      
+        <div class="six wide column">
+          <div style="display:inline-block;width:400px;padding-top: 12%;"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/7.js?i=5gd34fcfi58&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;sx=0" async="async"></script></div>
+          <!-- hitwebcounter Code START -->
+          <a href="http://www.hitwebcounter.com" target="_blank">
+          <img src="http://hitwebcounter.com/counter/counter.php?page=6459605&style=0001&nbdigits=5&type=page&initCount=0" title="www.hitwebcounter.com" Alt="www.hitwebcounter.com"   border="0" >
+          </a>
+          <br/>
+          <a href="http://www.hitwebcounter.com" title="This Website Visits" 
+          target="_blank" style="font-family: Geneva, Arial, Helvetica; 
+          font-size: 9px; color: #76766B; text-decoration: none ;"><strong>This Website Visits                                        </strong>
+          </a>            
+        </div>
+      
+      </div>  
+      
+
 
     <link rel="stylesheet" type="text/css" href="/css/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="http://semantic-ui.com/dist/components/grid.css">
@@ -60,15 +81,6 @@
     <script src="/js/moment.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/script.js"></script>
-<!-- hitwebcounter Code START -->
-<a href="http://www.hitwebcounter.com" target="_blank">
-<img src="http://hitwebcounter.com/counter/counter.php?page=6459605&style=0001&nbdigits=5&type=page&initCount=0" title="www.hitwebcounter.com" Alt="www.hitwebcounter.com"   border="0" >
-</a>
-<br/>
-<a href="http://www.hitwebcounter.com" title="This Website Visits" 
-target="_blank" style="font-family: Geneva, Arial, Helvetica; 
-font-size: 9px; color: #76766B; text-decoration: none ;"><strong>This Website Visits                                        </strong>
-</a>   
-                                
+
   </body>
 </html>
